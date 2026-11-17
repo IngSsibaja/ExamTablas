@@ -1,0 +1,54 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.portada {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/016/283/715/non_2x/blue-technical-background-1-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+}
+
+.tabla-tecnicos {
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+    float: right; /* la manda a la derecha */
+    margin: 20px 60px 0 0; /* arriba, derecha, abajo, izquierda */
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    display: flex;
+}
+
+    ul li a {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        ul li a:hover:not(.active) {
+            background-color: #808080;
+        }
+
+        ul li a.active {
+            background-color: #0026ff;
+        }
