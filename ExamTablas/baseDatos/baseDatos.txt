@@ -1,0 +1,37 @@
+﻿create database Examen
+
+use Examen
+create table tecnicos
+(
+	tecnicos_id int primary key,
+	nombre varchar(20) not null,
+	especialidad varchar(30) not null,
+)
+
+use Examen
+create table asignaciones
+(
+	asignacion_id int primary key,
+	reparacion_id int,
+	tecnicos_id int,
+	fecha_asignacion datetime not null,
+	constraint fk_asignaciones_tecnicos foreign key (tecnicos_id) references tecnicos(tecnicos_id)
+)
+
+Select * From tecnicos
+
+Select * From asignaciones
+
+use Examen
+insert into tecnicos
+values(1, 'Sebastian', 'Informatico'),
+	  (2, 'Priscilla', 'Técnica')
+
+use Examen
+insert into asignaciones
+values(1, 20, 1, '2008-4-16 10:00'),
+	  (2, 25, 2, '1982.11.25 11:00')
+
+use Examen
+insert into asignaciones
+values(3, 30, 3, '1999-12-11 12:00')

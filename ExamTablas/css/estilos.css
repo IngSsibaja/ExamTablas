@@ -25,9 +25,29 @@
     font-size: 20px;
 }
 
-h1 {
-    margin: 10px;
+.tabla-datos1 {
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 20px;
+    margin: 20px;
     text-align: center;
+    float: left; /* la manda a la derecha */
+    margin: 20px 60px 0 30px; /* arriba, derecha, abajo, izquierda */
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+.h1 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+    float: left; /* la manda a la derecha */
+    margin: 10px 800px 0 130px; /* arriba, derecha, abajo, izquierda */
+
 }
 
 ul {

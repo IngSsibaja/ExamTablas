@@ -69,7 +69,7 @@ namespace ExamTablas.capaLogica
 
             return retorno;
         }
-        public static int Borrarclientes(int codigo)
+        public static int Borrarclientes(int id_tecnico)
         {
             int retorno = 0;
             SqlConnection Conn = new SqlConnection();
@@ -81,7 +81,7 @@ namespace ExamTablas.capaLogica
                     {
                         CommandType = CommandType.Text
                     };
-                    cmd.Parameters.Add(new SqlParameter("@id_tecnico", codigo));
+                    cmd.Parameters.Add(new SqlParameter("@id_tecnico", id_tecnico));
 
                     retorno = cmd.ExecuteNonQuery();
                 }

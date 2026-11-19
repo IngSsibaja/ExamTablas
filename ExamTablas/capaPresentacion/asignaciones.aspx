@@ -7,7 +7,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>ExamenTecnico</title>
-    <link rel="stylesheet" type="text/css" href="/css/estilos.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/estilos.css?v2"/>
 </head>
 <body class="portada">
     <form id="form1" runat="server">
@@ -21,11 +21,11 @@
         </div>
 
         <div>
-            <h1>¡Bienvenido al Gestor de Asignaciones!</h1>
+            <h1 class="h1">¡Bienvenido al Gestor de Asignaciones!</h1>
         </div>
 
         <div>
-            <asp:GridView ID="GridView1" runat="server" Height="196px" Width="321px" CssClass="tabla-tecnicos"></asp:GridView>
+            <asp:GridView ID="GridView1" runat="server" Height="120px" Width="600px" CssClass="tabla-tecnicos"></asp:GridView>
         </div>
 
         <div>
